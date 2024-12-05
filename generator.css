@@ -1,0 +1,284 @@
+/* Generator specific styles */
+.generator-header {
+    margin-bottom: 2rem;
+}
+
+.generator-header h1 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.generator-header p {
+    color: #6b7280;
+}
+
+.generator-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Password Display */
+.password-display {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.generated-password {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.generated-password input {
+    flex-grow: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    font-family: monospace;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+.password-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.password-actions button {
+    background-color: #f3f4f6;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.password-actions button:hover {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+.password-actions .save-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.password-actions .save-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Password Strength Meter */
+.password-strength {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.strength-meter {
+    flex-grow: 1;
+    height: 4px;
+    background-color: #e5e7eb;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+.strength-bar.weak { 
+    width: 25%;
+    background-color: #ef4444;
+}
+
+.strength-bar.medium {
+    width: 50%;
+    background-color: #f59e0b;
+}
+
+.strength-bar.strong {
+    width: 75%;
+    background-color: #10b981;
+}
+
+.strength-bar.very-strong {
+    width: 100%;
+    background-color: #059669;
+}
+
+.strength-text {
+    font-size: 0.875rem;
+    color: #059669;
+    font-weight: 500;
+}
+
+/* Generator Options */
+.generator-options {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.option-group {
+    margin-bottom: 1.5rem;
+}
+
+.option-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.length-control {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.length-control input[type="range"] {
+    flex-grow: 1;
+    height: 4px;
+    -webkit-appearance: none;
+    background-color: #e5e7eb;
+    border-radius: 2px;
+}
+
+.length-control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.length-control input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: #2563eb;
+}
+
+.length-value {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.checkbox-container:hover {
+    background-color: #f9fafb;
+}
+
+.checkbox-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.example {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-family: monospace;
+}
+
+/* Password History */
+.password-history {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.password-history h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+}
+
+.password-text {
+    font-family: monospace;
+    color: #374151;
+}
+
+.history-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.history-actions button {
+    background: none;
+    border: none;
+    color: #6b7280;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.history-actions button:hover {
+    color: #3b82f6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .generator-container {
+        padding: 0 1rem;
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .generated-password {
+        flex-direction: column;
+    }
+
+    .password-actions {
+        justify-content: flex-end;
+    }
+}

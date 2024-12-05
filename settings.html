@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - CypherNest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>CypherNest</h1>
+            </div>
+           
+            <button class="add-password-btn">
+                <i class="fas fa-plus"></i>
+                <span>Add Password</span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="vault.html" class="nav-item">
+                    <i class="fas fa-key"></i>
+                    <span>Password Vault</span>
+                </a>
+                <a href="generator.html" class="nav-item">
+                    <i class="fas fa-random"></i>
+                    <span>Generator</span>
+                </a>
+                <a href="analytics.html" class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Analytics</span>
+                </a>
+                <a href="notifications.html" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </a>
+                <a href="settings.html" class="nav-item active">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            <button class="logout-btn"><a href="logout.html">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </a>
+            </button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="settings-header">
+                <div>
+                    <h1>Settings</h1>
+                    <p>Manage your account and security preferences</p>
+                </div>
+            </div>
+
+            <div class="settings-container">
+                <!-- Account Settings -->
+                <section class="settings-section">
+                    <h2>Account Settings</h2>
+                    <div class="settings-card">
+                        <div class="profile-info">
+                            <div class="profile-avatar">
+                                <img src="https://ui-avatars.com/api/?name=John+Doe&background=3b82f6&color=fff" alt="Profile">
+                                <button class="change-avatar">
+                                    <i class="fas fa-camera"></i>
+                                </button>
+                            </div>
+                            <div class="profile-details">
+                                <h3>John Doe</h3>
+                                <p>john.doe@example.com</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Display Name</label>
+                            <input type="text" value="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" value="john.doe@example.com">
+                        </div>
+                        <button class="save-btn">Save Changes</button>
+                    </div>
+                </section>
+
+                <!-- Security Settings -->
+                <section class="settings-section">
+                    <h2>Security Settings</h2>
+                    <div class="settings-grid">
+                        <div class="settings-card">
+                            <div class="setting-header">
+                                <div class="setting-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="setting-info">
+                                    <h3>Master Password</h3>
+                                    <p>Change your master password</p>
+                                </div>
+                            </div>
+                            <button class="change-btn">Change Password</button>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="setting-header">
+                                <div class="setting-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="setting-info">
+                                    <h3>Two-Factor Authentication</h3>
+                                    <p>Add an extra layer of security</p>
+                                </div>
+                            </div>
+                            <a href="2fa-setup.html" class="setup-btn">Set up 2FA</a>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="setting-header">
+                                <div class="setting-icon">
+                                    <i class="fas fa-history"></i>
+                                </div>
+                                <div class="setting-info">
+                                    <h3>Login History</h3>
+                                    <p>View recent login attempts</p>
+                                </div>
+                            </div>
+                            <button class="view-btn">View History</button>
+                        </div>
+
+                        <div class="settings-card">
+                            <div class="setting-header">
+                                <div class="setting-icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div class="setting-info">
+                                    <h3>Security Alerts</h3>
+                                    <p>Manage notification preferences</p>
+                                </div>
+                            </div>
+                            <button class="manage-btn">Manage Alerts</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Preferences -->
+                <section class="settings-section">
+                    <h2>Preferences</h2>
+                    <div class="settings-card">
+                        <div class="preferences-list">
+                            <label class="preference-item">
+                                <span class="preference-label">Auto-lock vault after inactivity</span>
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                            <label class="preference-item">
+                                <span class="preference-label">Clear clipboard after copying</span>
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                            <label class="preference-item">
+                                <span class="preference-label">Show password strength indicator</span>
+                                <input type="checkbox" checked>
+                                <span class="toggle-slider"></span>
+                            </label>
+                            <label class="preference-item">
+                                <span class="preference-label">Enable dark mode</span>
+                                <input type="checkbox">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Danger Zone -->
+                <section class="settings-section danger-zone">
+                    <h2>Danger Zone</h2>
+                    <div class="settings-card">
+                        <div class="danger-actions">
+                            <div class="danger-action">
+                                <div class="danger-info">
+                                    <h3>Export Data</h3>
+                                    <p>Download all your stored passwords and data</p>
+                                </div>
+                                <button class="danger-btn">Export</button>
+                            </div>
+                            <div class="danger-action">
+                                <div class="danger-info">
+                                    <h3>Delete Account</h3>
+                                    <p>Permanently delete your account and all data</p>
+                                </div>
+                                <button class="danger-btn delete">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

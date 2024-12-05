@@ -1,0 +1,246 @@
+/* Analytics specific styles */
+.analytics-header {
+    margin-bottom: 2rem;
+}
+
+.analytics-header h1 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.analytics-header p {
+    color: #6b7280;
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.analytics-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Security Score Card */
+.score-card {
+    text-align: center;
+}
+
+.score-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.score-circle svg {
+    transform: rotate(-90deg);
+}
+
+.score-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.score-value {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.score-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+}
+
+.stat-item i {
+    font-size: 1.5rem;
+    color: #3b82f6;
+}
+
+.stat-item.warning i {
+    color: #f59e0b;
+}
+
+.stat-item.danger i {
+    color: #ef4444;
+}
+
+.stat-item.success i {
+    color: #10b981;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* Action Items */
+.action-items {
+    grid-column: span 2;
+}
+
+.action-items h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+}
+
+.action-item:hover {
+    background-color: #f3f4f6;
+}
+
+.action-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #374151;
+}
+
+.action-item.warning .action-icon {
+    background-color: #fef3c7;
+    color: #f59e0b;
+}
+
+.action-item.danger .action-icon {
+    background-color: #fee2e2;
+    color: #ef4444;
+}
+
+.action-info {
+    flex-grow: 1;
+}
+
+.action-info h4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 0.25rem;
+}
+
+.action-info p {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* Password Age Chart */
+.password-age {
+    grid-column: span 2;
+}
+
+.password-age h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.age-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+    padding-top: 2rem;
+}
+
+.chart-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.bar-fill {
+    width: 100%;
+    background-color: #3b82f6;
+    border-radius: 0.25rem 0.25rem 0 0;
+    transition: height 0.3s ease;
+}
+
+.chart-bar.warning .bar-fill {
+    background-color: #f59e0b;
+}
+
+.bar-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-items,
+    .password-age {
+        grid-column: span 1;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
